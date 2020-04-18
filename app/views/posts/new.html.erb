@@ -1,0 +1,11 @@
+<div class="memo_main">
+  <div class="memo_show_main">
+    <%= form_tag("/posts/create") do %>
+      <textarea name="content"></textarea>
+      <br>
+      <div class="memo_show_botton">
+        <input type="submit" value="保存">
+      </div>
+    <% end %>
+  </div>
+</div>

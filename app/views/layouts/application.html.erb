@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SampleApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="https://kit.fontawesome.com/11d31b0e71.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="link">
+        <%= link_to "home","/" %>
+      </div>
+      <div class="link">
+        <%= link_to "スケジュール","/home/schedule" %>
+      </div>
+      <div class="link">
+        <%= link_to "memo","http://localhost:3000/posts/index" %>
+      </div>
+    </header>
+    <div class="header_back">
+    </div>
+    <%= yield %>
+  </body>
+</html>

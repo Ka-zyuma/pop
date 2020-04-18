@@ -1,0 +1,14 @@
+<div class=memo_main >
+  <div class="memo_new_icon">
+    <%=link_to("NEW!!","/posts/new")%>
+  </div>
+  <% @posts.each do |post| %>
+    <div class="posts_index_title_outside">
+      <i class="fas fa-map-pin"></i>
+      <div class="posts_index_title">
+        <br>
+        <%=link_to(post.content,"/posts/#{post.id}")%>
+      </div>
+    </div>
+  <% end %>
+</div>
